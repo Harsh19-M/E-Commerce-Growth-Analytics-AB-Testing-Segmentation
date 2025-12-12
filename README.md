@@ -8,6 +8,7 @@ End-to-end Project Analyzing **Customer conversion** and **engagement across web
 ## Key Highlights
 - **PostgreSQL Data Aggregation & Cleaning:** Built a clean, analysis-ready table by combining sessions, users, orders, and experiments tables using `CTEs`; handled boolean    event tracking, null values `(COALESCE)`, distinct counts, and filtered counts `(COUNT(*) FILTER)` to accurately capture clicks, add-to-cart actions, completed purchases,    and orders; ensured proper session-level aggregation for A/B test analysis, ready for downstream Python analysis and modeling.
 
+- **PostgreSQL Data Aggregation & Cleaning:** Consolidated ``80,000 session records``, ``8,000 user profiles``, ``30,044 orders``, and ``8 experiment definitions`` into a single ``1,563-row analysis-ready`` table. Built this using multi-step, ``industry-standard CTEs`` after running ~10 exploratory SQL queries to validate experiment exposure and event logic. Handled null values `(COALESCE)`, boolean event tracking, `window functions`, distinct counts, and filtered counts `(COUNT(*) FILTER)` to accurately capture clicks, add-to-cart actions, purchases, and orders. Ensured correct session-level aggregation to produce a clean, trustworthy dataset for A/B test analysis and downstream Python modeling.
 
 ## Tools & Skills
 **SQL(PostgreSQL)** | **Python(Cleaning, EDA, Research & Testing/Visulizations)** | **Power BI - Dashboard Tools & DAX** | **Data Modeling** | **ETL** | **Hypothesis Testing** | **Business Analysis** 
