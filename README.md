@@ -1,6 +1,9 @@
 # E-Commerce Growth Analytics: A/B Testing & Customer Persona Segmentation
- 
+
+End-to-end project analyzing customer conversion and engagement across website experiments, tracking user behavior to measure how different A/B test variations impact clicks, add-to-cart actions, and completed purchases. Using SQL, Python, and Power BI, aggregated and cleaned user sessions, orders, and experiment data into a single analysis-ready table, enabling detailed A/B test analysis and actionable insights for improving engagement, purchases, and revenue growth.
+
 **Note:** This project uses a mock dataset designed to simulate realistic performance. Company names and figures are for demonstration purposes only. 
+
 
 ## Key Highlights
 - **PostgreSQL Data Aggregation & Cleaning:** Built a clean, analysis-ready table by combining sessions, users, orders, and experiments tables using `CTEs`; handled boolean    event tracking, null values `(COALESCE)`, distinct counts, and filtered counts `(COUNT(*) FILTER)` to accurately capture clicks, add-to-cart actions, completed purchases,    and orders; ensured proper session-level aggregation for A/B test analysis, ready for downstream Python analysis and modeling.
