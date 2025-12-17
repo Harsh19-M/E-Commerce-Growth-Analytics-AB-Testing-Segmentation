@@ -74,7 +74,19 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 # Experiment-level Statistical Exploration
 
 #### **Code Used in ```Python```**
+```
+Cmplt_Pur = agg_df.pivot_table(index="experiment_id", columns="Experiment Version", values="Conversion_Rate(Cmpltd_Pur-Ratio)")
+Cmplt_Pur.describe() # THIS GAVE US QUICK DESCRITPIVE STATS OF THE TABLE
 
+'''
+Lift % FORMULA:
+((New Rate - Old Rate) / Old Rate) *100
+'''
+
+Cmplt_Pur["Cmplt_Pur_Lift%"] = ((Cmplt_Pur["B"] - Cmplt_Pur["A"])/ Cmplt_Pur["A"])*100
+Cmplt_Pur # GIVES US THE TABLE including the lift% for each experiement by the Versions.
+
+```
 
 **Experiment Insights (Lift% Summaries):**
 
