@@ -82,13 +82,11 @@ This project aims to:
 - 5 out of 8 experiments show strong positive purchase lift under Version B, indicating consistent conversion improvement.
 - Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, reinforcing the importance of evaluating full-funnel outcomes.
 
-**NOTE** Detailed lift tables and experiment-level interpretations below.
-
 **NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
 
 The EDA builds a **Complete Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
 
-<details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
+<details> <summary><b> Key EDAs Experiment-level metrics, rates, and lift analysis (Click to Expand)</b></summary>
  
 ### **Experiment-level Funnel Lift Analysis (A/B Testing):**
 - Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
