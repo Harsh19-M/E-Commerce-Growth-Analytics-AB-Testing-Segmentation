@@ -71,7 +71,16 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 
 <details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
  
-# Experiment-level Statistical Exploration
+# **Experiment-level Funnel Lift Analysis (A/B Testing):**
+
+- Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
+- Version B shows higher completed purchase rates in the majority of experiments, though performance varies by experiment ID.
+- 5 out of 8 experiments demonstrate strong positive lift in completed purchases, indicating that Version B often converts higher-quality buyers.
+- Early-funnel metrics (CTR, Add-to-Cart) are not reliable decision criteria on their own — several experiments show lower or neutral engagement but higher final conversions, suggesting improved traffic quality rather than volume.
+- Add-to-Cart serves as a useful mid-funnel diagnostic, helping explain conversion outcomes but should not override purchase performance.
+- Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
+
+**Completed Purchase Lift Analysis (Primary Metric)**
 
 #### **Code Used in ```Python```**
 ```
@@ -87,18 +96,6 @@ Cmplt_Pur["Cmplt_Pur_Lift%"] = ((Cmplt_Pur["B"] - Cmplt_Pur["A"])/ Cmplt_Pur["A"
 Cmplt_Pur # GIVES US THE TABLE including the lift% for each experiement by the Versions.
 
 ```
-
-**Experiment Insights (Lift% Summaries):**
-
-- Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
-- Version B shows higher average completed purchase rates compared to Version A across experiments.
-- 5 out of 8 experiments demonstrate strong positive lift in completed purchases, indicating that Version B often converts higher-quality buyers.
-- Early-funnel metrics (CTR, Add-to-Cart) are not reliable decision criteria on their own — several experiments show lower or neutral engagement but higher final conversions, suggesting improved traffic quality rather than volume.
-- Add-to-Cart serves as a useful mid-funnel diagnostic, helping explain conversion outcomes but should not override purchase performance.
-- Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
-
-**Completed Purchase Lift Analysis (Primary Metric)**
-
  **Top positive lift experiments**
 | experiment_id | A (Conv) | B (Conv) | Cmplt_Pur_Lift % | Interpretation                                    |
 | ------------- | -------: | -------: | ---------------: | ------------------------------------------------- |
@@ -127,6 +124,19 @@ A minority of experiments regress, reinforcing the importance of experiment-leve
 #### **Output Summary**
 
 **Add-to-Cart Lift Analysis**
+#### **Code Used in ```Python```**
+```
+Add_To_C = agg_df.pivot_table(index="experiment_id", columns="Experiment Version", values="Add_to_cart Rate")
+Add_To_C.describe()
+
+'''
+Lift % FORMULA:
+((New Rate - Old Rate) / Old Rate) *100 '''
+
+Add_To_C["Add_To_C_Lift%"] = ((Add_To_C["B"] - Add_To_C["A"])/Add_To_C["A"])*100
+Add_To_C
+
+```
 
  **Top positive lift experiments**
 | experiment_id | A (ATC) | B (ATC) | Add_To_C_Lift % | Interpretation                               |
@@ -149,8 +159,24 @@ Most experiments show improved Add-to-Cart behavior under Version B, with a few 
 Quick Takeaway:
 A few experiments show weaker cart engagement, but they are outweighed by stronger positive lifts elsewhere.
 
+NOTE: Extremely high lift values (e.g., +192%) are influenced by low Version A baselines and should be interpreted directionally rather than absolutely.
+
 
 **Click-Through Behaviour Lift Analysis**
+#### **Code Used in ```Python```**
+
+```
+click_TBeh = agg_df.pivot_table(index="experiment_id", columns="Experiment Version", values="Click-through_Behaviour")
+click_TBeh.describe()
+'''
+Lift % FORMULA:
+((New Rate - Old Rate) / Old Rate) *100
+'''
+
+click_TBeh["Click_TBeh_Lift%"] = ((click_TBeh["B"]  - click_TBeh["A"])/click_TBeh["A"])*100
+click_TBeh
+
+```
 
  **Top positive lift experiments**
 | experiment_id | A (CTR) | B (CTR) | Click_TBeh_Lift % | Interpretation                           | 
