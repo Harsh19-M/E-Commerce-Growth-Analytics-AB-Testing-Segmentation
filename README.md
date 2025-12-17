@@ -95,6 +95,7 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 | 8             |   0.1359 |   0.2165 |      **+59.28%** | Large gain in completed purchases                 |
 | 7             |   0.1720 |   0.2697 |      **+56.74%** | Consistent, strong improvement                    |
 | 2             |   0.1429 |   0.2124 |      **+48.67%** | Meaningful uplift — B clearly wins                |
+
 Quick Takeaway:
 5 out of 8 experiments show strong positive conversion lift, making Version B clearly superior from a revenue perspective.
 
@@ -104,6 +105,7 @@ Quick Takeaway:
 | 1             |   0.1949 |   0.1778 |       **−8.79%** | Slight decline in conversions |
 | 6             |   0.1852 |   0.1522 |      **−17.83%** | Moderate underperformance     |
 | 5             |   0.1829 |   0.1224 |      **−33.06%** | Worst performer for purchases |
+
 Quick Takeaway:
 A minority of experiments regress, reinforcing the importance of experiment-level analysis rather than global averages.
 
