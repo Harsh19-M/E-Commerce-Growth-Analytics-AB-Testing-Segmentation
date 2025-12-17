@@ -60,19 +60,35 @@ This project aims to:
 
 
 ### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
-
 - Connected to the
 - 
-### **Initial Exploration (EDA) in Python**
+### **Exploration (EDA) in Python**
+EDA #1 — Experiment Exposure & Balance (Validity Check)
+- User and session exposure across Version A and B is well balanced (≈3% user difference, ≈2% session difference), indicating no allocation bias.
+- All experiments have sufficient exposure with no missing or abnormal session distributions, supporting valid downstream comparison.
 
-- Conducted a full **Experiment-level EDA**
-- 
-The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
+EDA #2 — Funnel Metrics by Experiment (Behavioral Differences)
+- User behavior differs meaningfully between Version A and B across experiments, indicating that UI changes influence engagement and conversion rather than producing uniform effects.
+- Several experiments show higher completed purchase rates in Version B despite equal or lower click-through rates, suggesting improved traffic quality rather than increased volume.
+
+EDA #3 — Funnel Rate Analysis (CTR → ATC → Purchase)
+- High click-through rates do not consistently translate into purchases, confirming that CTR alone is not a reliable success metric.
+- Version B frequently outperforms Version A at the bottom of the funnel (completed purchases), even when early-funnel engagement is neutral or negative.
+- Add-to-cart behavior serves as a useful mid-funnel diagnostic but does not always predict final conversion success.
+
+EDA #4 — Lift Analysis (PRIMARY DECISION TOOL)
+- Completed Purchase lift was used as the primary decision metric due to its direct revenue impact.
+- 5 out of 8 experiments show strong positive purchase lift under Version B, indicating consistent conversion improvement.
+- Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, reinforcing the importance of evaluating full-funnel outcomes.
+**NOTE** Detailed lift tables and experiment-level interpretations below.
+
+**NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
+
+The EDA builds a **Complete Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
 
 <details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
  
-# **Experiment-level Funnel Lift Analysis (A/B Testing):**
-
+### **Experiment-level Funnel Lift Analysis (A/B Testing):**
 - Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
 - Version B shows higher completed purchase rates in the majority of experiments, though performance varies by experiment ID.
 - 5 out of 8 experiments demonstrate strong positive lift in completed purchases, indicating that Version B often converts higher-quality buyers.
