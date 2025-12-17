@@ -49,3 +49,42 @@ This project aims to:
 5. **Actionable Insights** – Translating data analysis into clear, implementable recommendations for the business.
 
 ---
+
+## Approach Overview
+### **Project-Planning (Framework Used):** SMART & CRISP-DM  
+
+### **Initial Approach – **
+
+
+### **Aggregated Table Creation – **
+
+
+### **Data Cleaning & Loading – PostgreSQL → Python → PostgreSQL**
+
+- Connected to the
+- 
+### **Initial Exploration (EDA) in Python**
+
+- Conducted a full **vendor-level EDA**
+- 
+The EDA builds a **complete vendor intelligence foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
+
+<details> <summary><b> Key EDAs Performed in Python (Click to Expand)</b></summary>
+
+<details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
+ 
+#### **Code Used in ```Python```**
+```
+# Experiment-level statistical
+
+```
+#### **Output Summary**
+
+| Experiment | Lift        | Interpretation                           |
+| ---------- | ----------- | ---------------------------------------- |
+| **2**      | **+26.65%** | Very strong improvement — B clearly wins |
+| **5**      | **+23.52%** | Large uplift, B is much better           |
+| **1**      | **+11.92%** | Solid improvement                        |
+
+</details> 
+
