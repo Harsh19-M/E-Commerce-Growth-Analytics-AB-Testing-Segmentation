@@ -73,6 +73,9 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
  
 # Experiment-level Statistical Exploration
 
+#### **Code Used in ```Python```**
+
+
 **Experiment Insights (Lift% Summaries):**
 
 - Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
@@ -82,12 +85,33 @@ The EDA builds a **Complete Vendor Intelligence Foundation**, revealing — sett
 - Add-to-Cart serves as a useful mid-funnel diagnostic, helping explain conversion outcomes but should not override purchase performance.
 - Overall, Version B delivers stronger bottom-line performance, even when early-funnel signals are mixed.
 
-#### **Code Used in ```Python```**
+**Completed Purchase Lift Analysis (Primary Metric)**
 
-<details> <summary><b> Key EDA: Code & Output Summary  (Click to Expand)</b></summary>
+**Top positive lift experiments**
+| experiment_id | A (Conv) | B (Conv) | Cmplt_Pur_Lift % | Interpretation                                    |
+| ------------- | -------: | -------: | ---------------: | ------------------------------------------------- |
+| 3             |   0.0755 |   0.2353 |     **+211.76%** | Exceptional improvement — B massively outperforms |
+| 4             |   0.1491 |   0.2453 |      **+64.48%** | Very strong conversion uplift                     |
+| 8             |   0.1359 |   0.2165 |      **+59.28%** | Large gain in completed purchases                 |
+| 7             |   0.1720 |   0.2697 |      **+56.74%** | Consistent, strong improvement                    |
+| 2             |   0.1429 |   0.2124 |      **+48.67%** | Meaningful uplift — B clearly wins                |
+Quick Takeaway:
+5 out of 8 experiments show strong positive conversion lift, making Version B clearly superior from a revenue perspective.
+
+**Neutral / negative experiments**
+| experiment_id | A (Conv) | B (Conv) | Cmplt_Pur_Lift % | Interpretation                |
+| ------------- | -------: | -------: | ---------------: | ----------------------------- |
+| 1             |   0.1949 |   0.1778 |       **−8.79%** | Slight decline in conversions |
+| 6             |   0.1852 |   0.1522 |      **−17.83%** | Moderate underperformance     |
+| 5             |   0.1829 |   0.1224 |      **−33.06%** | Worst performer for purchases |
+Quick Takeaway:
+A minority of experiments regress, reinforcing the importance of experiment-level analysis rather than global averages.
+
+<details> <summary><b> Key EDA: Code & Output Summary For Click Through Behaviour Lift Analysis and Add-to-Cart Lift Analysis (Click to Expand)</b></summary>
  
 #### **Output Summary**
-While Version B shows a slightly higher average CTR overall, experiment-level lift analysis reveals that only 3 out of 8 experiments experienced meaningful improvements. Several experiments showed neutral or negative impact, indicating that Version B’s effectiveness is experiment-specific rather than universally superior.ent rather than universally superior.
+
+**Completed Purchase Lift Analysis**
 
  **Top positive lift experiments**
 | experiment_id | A (CTR) | B (CTR) | Click_TBeh_Lift % | Interpretation                           | 
@@ -95,7 +119,6 @@ While Version B shows a slightly higher average CTR overall, experiment-level li
 | 2             |  0.3214 |  0.4071 |       **+26.65%** | Very strong improvement — B clearly wins |
 | 5             |  0.2561 |  0.3163 |       **+23.52%** | Large uplift, B is much better           |
 | 1             |  0.3475 |  0.3889 |       **+11.92%** | Solid improvement                        |
-
 Quick Takeaway: 3 out of 8 experiments show meaningful CTR improvement.         
 
  **Neutral / negative experiments**
@@ -106,8 +129,9 @@ Quick Takeaway: 3 out of 8 experiments show meaningful CTR improvement.
 | 7             |  0.3333 |  0.3034 |         **−8.99%**| B performs worse         |
 | 3             |  0.3491 |  0.3176 |         **−9.00%**| B performs worse         |
 | 8             |  0.3786 |  0.3402 |        **−10.15%**| Worst performer          |
-
 Quick Takeaway: Half the experiments hurt CTR when switching to B.
+
+While Version B shows a slightly higher average CTR overall, experiment-level lift analysis reveals that only 3 out of 8 experiments experienced meaningful improvements. Several experiments showed neutral or negative impact, indicating that Version B’s effectiveness is experiment-specific rather than universally superior.ent rather than universally superior.
 
 </details> 
 
