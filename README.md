@@ -219,3 +219,14 @@ While Version B shows a slightly higher average CTR overall, experiment-level li
 
 </details> 
 
+
+**EDA 5 — Funnel Drop-Off (Where do people quit?)**
+- ABCDEF
+-
+-
+
+✅ Option 1 — README (very solid, just 1 tiny tweak)
+“This dataset is simulated and aggregated, so funnel steps should be viewed as engagement signals rather than fixed step-by-step actions. Some users complete purchases without a recorded add-to-cart event. This could happen due to direct ‘Buy Now’ flows, users who already knew what they wanted before visiting the site, or limitations in how add-to-cart actions are captured in the data.”
+
+✅ Fixed Option 2 (slide-ready)
+“Since this is a simulated and aggregated dataset, funnel stages represent user engagement rather than a strict checkout sequence. Some users purchase without a recorded add-to-cart event due to direct purchase options, strong purchase intent before visiting the site, or how cart activity is tracked in the data.”
