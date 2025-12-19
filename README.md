@@ -222,10 +222,21 @@ While Version B shows a slightly higher average CTR overall, experiment-level li
 
 </details> 
 
-**EDA 5 — Funnel Drop-Off (Where do people quit?)**
-- ABCDEF
--
--
+**EDA 5 — Funnel Drop-Off Analysis (Where do people quit?)**
+- Landing experience effectiveness differs clearly across experiment variants.
+Visit → Product View rates range from roughly 25% to 42%, showing that some variants are significantly better at converting site visits into product interest.
+
+- The biggest funnel drop-off occurs between product view and add-to-cart.
+View → Add-to-Cart rates are consistently low across experiments (often 10–30%), indicating friction in translating interest into purchase intent rather than an issue with site entry.
+
+- Purchase behavior does not follow a strict step-by-step funnel.
+In multiple experiments, the Add-to-Cart → Purchase rate exceeds 100%, confirming that users can complete purchases without a recorded add-to-cart action. Funnel stages should therefore be interpreted as engagement signals, not mandatory sequential steps.
+
+- Overall conversion performance varies meaningfully by variant.
+Visit → Purchase rates span from approximately 8% to 27%, demonstrating that experimental changes materially impact end-to-end conversion effectiveness.
+
+- Different variants perform better at different funnel stages.
+Some variants excel at generating early interest (higher Visit → View), while others perform better at final conversion (higher Visit → Purchase), highlighting stage-specific optimization opportunities rather than a single universal winner.
 
 ✅ Option 1 — README (very solid, just 1 tiny tweak)
 “This dataset is simulated and aggregated, so funnel steps should be viewed as engagement signals rather than fixed step-by-step actions. Some users complete purchases without a recorded add-to-cart event. This could happen due to direct ‘Buy Now’ flows, users who already knew what they wanted before visiting the site, or limitations in how add-to-cart actions are captured in the data.”
