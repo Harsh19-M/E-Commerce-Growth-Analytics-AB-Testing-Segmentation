@@ -246,4 +246,4 @@ Some variants excel at generating early interest (higher Visit → View), while 
 
 
 **EDA 6 - Segment-Level Experiment Performance**
-
+Segment-level analysis helps identify whether experiment performance is driven by user engagement, purchase intent, or customer value, enabling targeted optimization rather than relying on overall averages.
