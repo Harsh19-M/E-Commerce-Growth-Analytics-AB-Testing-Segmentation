@@ -222,7 +222,7 @@ While Version B shows a slightly higher average CTR overall, experiment-level li
 
 </details> 
 
-**EDA 5 — Funnel Drop-Off Analysis (Where do people quit?)**
+**EDA 5 - Funnel Drop-Off Analysis (Where do people quit?)** 
 - Landing experience effectiveness differs clearly across experiment variants.
 Visit → Product View rates range from roughly 25% to 42%, showing that some variants are significantly better at converting site visits into product interest.
 
@@ -243,3 +243,7 @@ Some variants excel at generating early interest (higher Visit → View), while 
 
 ✅ Fixed Option 2 (slide-ready)
 “Since this is a simulated and aggregated dataset, funnel stages represent user engagement rather than a strict checkout sequence. Some users purchase without a recorded add-to-cart event due to direct purchase options, strong purchase intent before visiting the site, or how cart activity is tracked in the data.”
+
+
+**EDA 6 - Segment-Level Experiment Performance**
+
