@@ -256,3 +256,20 @@ For example, in the biggest segment (Medium Engagement + Low Intent), conversion
 Users with Medium Engagement + High Intent convert more (21.85% in B) than users with Low Engagement + Low Intent (20.36% in B), proving that users must stay engaged for intent to translate into purchases.
 - The largest business impact comes from mid-funnel users, not extreme cases.
 High-intent, high-engagement users convert well but are very few (often under 15 users), while mid-funnel segments (Medium/Low Engagement + Low Intent) contain hundreds of users and show strong, stable uplift under Experiment B — making them the most scalable revenue drivers.
+
+| Engagement_Level | Purchase_Intent_Level | Experiment Version | avg_Converion | Users |
+|-----------------|---------------------|-----------------|---------------|-------|
+| High            | High                | A               | 0.145823      | 8     |
+| High            | High                | B               | 0.207956      | 14    |
+| High            | Low                 | A               | 0.157507      | 140   |
+| High            | Low                 | B               | 0.200113      | 152   |
+| High            | Medium              | A               | 0.156034      | 6     |
+| High            | Medium              | B               | 0.180789      | 8     |
+| Low             | Low                 | A               | 0.153720      | 228   |
+| Low             | Low                 | B               | 0.203551      | 208   |
+| Medium          | High                | A               | 0.142523      | 16    |
+| Medium          | High                | B               | 0.218527      | 25    |
+| Medium          | Low                 | A               | 0.154694      | 366   |
+| Medium          | Low                 | B               | 0.206053      | 339   |
+| Medium          | Medium              | A               | 0.160910      | 25    |
+| Medium          | Medium              | B               | 0.182928      | 13    |
