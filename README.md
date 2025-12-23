@@ -238,8 +238,7 @@ This dataset is simulated and aggregated, so funnel steps should be viewed as en
 
 
 **EDA 6 - Segment-Level Experiment Performance**
-
-Users are segmented into 3 funnel stages: Engagement (Interest), Purchase Intent, and Final Conversion.
+Users are segmented into 3 funnel stages: Engagement (Interest), Purchase Intent, and Final Conversion. The addition of element_tested lets us see which UI/UX element drives conversions within each segment.
 
 **Engagement Level Segmentation**
 - High Engagement (~21% of users) are most active and likely to convert; Medium (~51%) are exploring and can be nudged toward conversion, Low (~28%) may need re-engagement campaigns.
@@ -249,15 +248,42 @@ Users are segmented into 3 funnel stages: Engagement (Interest), Purchase Intent
 - Most users (~93%) show low purchase intent, reflecting typical e-commerce behavior where browsing does not translate into cart actions.
 - A small but meaningful segment (~4%) demonstrates high purchase intent, defined by both cart interaction and above-median add-to-cart rates, indicating users closest to conversion.
 
-**Final Conversion (Segment-Level Analysis)**
-- Experiment B consistently outperforms Experiment A across all user segments, including large, high-impact groups.
-For example, in the biggest segment (Medium Engagement + Low Intent), conversion increases from 15.47% (A) → 20.61% (B) (+5.1 pp across 366–339 users), showing the uplift is real and not driven by a niche audience.
-- Purchase intent alone does not guarantee higher conversion — engagement is the multiplier.
-Users with Medium Engagement + High Intent convert more (21.85% in B) than users with Low Engagement + Low Intent (20.36% in B), proving that users must stay engaged for intent to translate into purchases.
-- The largest business impact comes from mid-funnel users, not extreme cases.
-High-intent, high-engagement users convert well but are very few (often under 15 users), while mid-funnel segments (Medium/Low Engagement + Low Intent) contain hundreds of users and show strong, stable uplift under Experiment B — making them the most scalable revenue drivers.
+**Final Conversion (Segment-Level & Element-Level Analysis)**
+Experiment B consistently outperforms Experiment A across all user segments, but the uplift varies by element:
+- For Medium Engagement + Low Intent (largest segment), TrustBadge and UrgencyBanner in Experiment B drive the biggest lift.
+- For High Engagement + High Intent users, TrustBadge and PriceCharm are most effective.
 
-<details> <summary><b> Final Conversion Table (Segemented) (Click to Expand)</b></summary>
+Purchase intent alone does not guarantee higher conversion — engagement and the tested element are multipliers.
+- Medium Engagement + High Intent users convert more with UrgencyBanner (B: 22.28%) than Low Engagement + Low Intent users with any element (B: ~21–22%).
+
+Mid-funnel users + high-performing elements = largest business impact.
+- High-intent, high-engagement users convert well but are very few (<15 users).
+- Mid-funnel segments (Medium/Low Engagement + Low Intent) contain hundreds of users and show strong, stable uplift under Experiment B when optimal elements are used — making them the most scalable revenue drivers.
+
+<details> 
+<summary><b> Final Conversion Table with Best Performing Element (Click to Expand)</b></summary>
+
+| Engagement_Level | Purchase_Intent_Level | Experiment_Version | Best_Element      | Best_avg_Conversion | Users_in_Segment |
+|-----------------|---------------------|-----------------|-----------------|------------------|----------------|
+| High            | High                | A               | UrgencyBanner    | 0.149123         | 8              |
+| High            | High                | B               | TrustBadge       | 0.216495         | 14             |
+| High            | Low                 | A               | FreeShippingBadge| 0.177145         | 141            |
+| High            | Low                 | B               | TrustBadge       | 0.223545         | 153            |
+| High            | Medium              | A               | UrgencyBanner    | 0.194915         | 6              |
+| High            | Medium              | B               | TrustBadge       | 0.235294         | 8              |
+| Low             | Low                 | A               | FreeShippingBadge| 0.177679         | 230            |
+| Low             | Low                 | B               | TrustBadge       | 0.227136         | 209            |
+| Medium          | High                | A               | UrgencyBanner    | 0.149123         | 16             |
+| Medium          | High                | B               | UrgencyBanner    | 0.222781         | 25             |
+| Medium          | Low                 | A               | FreeShippingBadge| 0.176941         | 371            |
+| Medium          | Low                 | B               | TrustBadge       | 0.225647         | 343            |
+| Medium          | Medium              | A               | UrgencyBanner    | 0.194915         | 25             |
+| Medium          | Medium              | B               | TrustBadge       | 0.235294         | 13             |
+
+</details>
+
+  
+<details> <summary><b> Complete Final Conversion Table (with All elements tested) (Click to Expand)</b></summary>
 
 | Engagement_Level | Purchase_Intent_Level | Experiment Version | element_tested      | avg_Converion | Users |
 |-----------------|---------------------|-----------------|------------------|---------------|-------|
