@@ -239,7 +239,7 @@ This dataset is simulated and aggregated, so funnel steps should be viewed as en
 
 **EDA 6 - Segment-Level Experiment Performance**
 
-Users are segmented into 3 funnel stages: Engagement (interest), Purchase Intent, and Final Conversion.
+Users are segmented into 3 funnel stages: Engagement (Interest), Purchase Intent, and Final Conversion.
 
 **Engagement Level Segmentation**
 - High Engagement (~21% of users) are most active and likely to convert; Medium (~51%) are exploring and can be nudged toward conversion, Low (~28%) may need re-engagement campaigns.
