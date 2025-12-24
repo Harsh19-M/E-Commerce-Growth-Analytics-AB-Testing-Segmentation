@@ -26,7 +26,7 @@ End-to-end Project Analyzing **Customer conversion** and **engagement across web
 
 
 # E-Commerce Growth Analytics (Approach & Findings)
-A comprehensive Data Analytics Project analyzing website micro-experiments and customer behavior using PostgreSQL and Python, uncovering actionable insights to optimize website conversion, customer targeting, and revenue growth.
+A Comprehensive Data Analytics Project analyzing website micro-experiments and customer behavior using PostgreSQL and Python, uncovering actionable insights to optimize website conversion, customer targeting, and revenue growth.
 
 ---
 
