@@ -51,7 +51,7 @@ This project aims to:
 ---
 
 ## Approach Overview
-### **Project-Planning (Framework Used):** Project Planning & Funnel Analysis - Funnel Diagram - Something Like that GOES HERE  
+### **Project Planning & Funnel Analysis:**    
 Define metrics, map funnel stages (Visit → View → ATC → Purchase), segment users by engagement & purchase intent.
 
 ### **Aggregated Table Creation – PostgreSQL**
