@@ -370,7 +370,8 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 **Interpretation**
 * The positive Z-statistic indicates that **Variant B converts better than Variant A**.
-* The p-value is well below 0.05, (0.0063) meaning there is 0.63% chance this lift is random. So, the observed lift is **statistically significant** and unlikely due to random chance.
+* The p-value is well below 0.05, (0.0063) meaning there is 0.63% chance this lift is random.
+* So, the observed lift is **statistically significant** and unlikely due to random chance.
 
 **Conclusion**
 - **Variant B delivers a statistically significant improvement in conversion rate over Variant A.**
