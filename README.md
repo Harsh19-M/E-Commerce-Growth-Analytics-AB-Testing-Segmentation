@@ -87,15 +87,11 @@ The EDA builds a **Complete Intelligence Foundation**, revealing — setting the
 - Add-to-cart behavior serves as a useful mid-funnel diagnostic but does not always predict final conversion success.
 
 **EDA 4 - Lift Analysis**
-
-<br>Using Completed_Purchase as the primary decision metric, 5 of 8 experiments show strong positive lift under Version B, reinforcing the importance of full-funnel evaluation over isolated engagement metrics.
-
-<details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
-
 - Completed Purchase lift was used as the primary decision metric due to its direct revenue impact.
 - 5 out of 8 experiments show strong positive purchase lift under Version B, indicating consistent conversion improvement.
 - Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, reinforcing the importance of evaluating full-funnel outcomes.
 
+<details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
 **NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
 
  
@@ -233,9 +229,8 @@ While Version B shows a slightly higher average CTR overall, experiment-level li
 </details> 
 
 **EDA 5 - Funnel Drop-Off Analysis (Where do people quit?)**
-
-<br>The largest drop-off occurs between product view and add-to-cart, while Visit → Purchase rates vary widely by variant, showing that different experiments optimize different funnel stages rather than producing a single universal winner.
-
+- Funnel performance varies by stage, not uniformly by variant: Experiment variants differ meaningfully in how well they convert users at each funnel stage. Some variants are stronger at turning visits into product interest (Visit → View ≈ 25–42%), while others excel at final conversion (Visit → Purchase ≈ 8–27%), indicating stage-specific optimization opportunities rather than a single universal winner.
+- Mid-funnel friction drives drop-off, and the funnel is non-linear: The largest drop-off consistently occurs between Product View → Add-to-Cart (often 10–30%), highlighting friction in translating interest into purchase intent rather than issues with site entry. Add-to-Cart → Purchase rates exceeding 100% in several experiments confirm that purchases can occur without recorded cart actions, so funnel steps should be interpreted as engagement signals—not strict sequential behavior.
 <details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
 
 - Landing experience effectiveness differs clearly across experiment variants.
