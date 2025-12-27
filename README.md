@@ -398,6 +398,7 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 
 **Metric:** Conversion rate per experiment (`completed purchase / users exposed`).
 
+<details> <summary><b> Click to View The Results Tables (Click to Expand)</b></summary>
 
 ### **Results Tables**
 
@@ -440,6 +441,7 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 | 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.0603  |
 | 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.0711  |
 
+</details>
 
 ### **Interpretation & Findings**
 
