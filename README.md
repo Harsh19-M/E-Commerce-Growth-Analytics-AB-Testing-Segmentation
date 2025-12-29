@@ -442,6 +442,11 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 | 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.0711  |
 
 
+**Test 2 — OVerall Experiment-Level Conversion Impact (A vs B)**
+Legend:
+🟢 = Clear winner → rollout
+🟡 = Promising / retest → consider limited rollout
+🔴 = No improvement / negative → do not rollout
 
 | Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Two-Sided p-value | B > A p-value | B < A p-value | Verdict                                     |
 | ---------- | ----------- | ----------- | ----------- | ----------------- | ------------- | ------------- | ------------------------------------------- |
@@ -453,19 +458,6 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 | 6          | 0.1852      | 0.1538      | -0.0313     | 0.5585            | 0.2792        | 0.7208        | 🔴 No significant impact; skip rollout      |
 | 7          | 0.1739      | 0.2697      | 0.0958      | 0.1206            | 0.9397        | 0.0603        | 🟡 Positive lift but marginal; retest       |
 | 8          | 0.1373      | 0.2165      | 0.0792      | 0.1422            | 0.9289        | 0.0711        | 🟡 Positive lift but inconclusive; retest   |
-
-
-
-| Experiment | Conv Rate A | Conv Rate B | Lift (B − A) | Two-Sided p | B > A p    | B < A p    | Decision           |
-| ---------- | ----------- | ----------- | ------------ | ----------- | ---------- | ---------- | ------------------ |
-| 1          | 0.2000      | 0.1818      | -0.0182      | 0.7445      | 0.3723     | 0.6277     | ❌ No impact        |
-| 2          | 0.1446      | 0.2143      | +0.0697      | 0.2148      | 0.8926     | 0.1074     | ⚠️ Retest          |
-| 3          | 0.0769      | 0.2353      | +0.1584      | **0.0023**  | **0.9989** | **0.0011** | ✅ Rollout B        |
-| 4          | 0.1518      | 0.2476      | +0.0958      | 0.0767      | 0.9616     | **0.0384** | ⚠️ Limited rollout |
-| 5          | 0.1829      | 0.1224      | -0.0605      | 0.2578      | 0.1289     | 0.8711     | ❌ Negative         |
-| 6          | 0.1852      | 0.1538      | -0.0313      | 0.5585      | 0.2792     | 0.7208     | ❌ No impact        |
-| 7          | 0.1739      | 0.2697      | +0.0958      | 0.1206      | 0.9397     | 0.0603     | ⚠️ Retest          |
-| 8          | 0.1373      | 0.2165      | +0.0792      | 0.1422      | 0.9289     | 0.0711     | ⚠️ Retest          |
 
 </details>
 
