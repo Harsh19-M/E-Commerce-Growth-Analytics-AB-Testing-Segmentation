@@ -377,10 +377,6 @@ Mid-funnel users + high-performing elements = largest business impact.
 - **Variant B delivers a statistically significant improvement in conversion rate over Variant A.**
 - This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
 
-
-
-Aight bro, I got you — here’s a **clean, professional, recruiter-ready version of Test 2**, combining all three analyses (two-sided, larger, smaller) with clear findings and interpretation for each. I’ll follow the **same format as your Test 1 README**, just adapted for per-experiment lift analysis.
-
 ---
 
 ## **Test 2 — Experiment-Level Conversion Impact (A vs B)**
@@ -389,12 +385,11 @@ Aight bro, I got you — here’s a **clean, professional, recruiter-ready versi
 
 
 ### **Statistical Approach**
-
-We applied a **Two-Proportion Z-Test** for each experiment under three scenarios:
+Applied a **Two-Proportion Z-Test** for each experiment under three scenarios:
 
 1. **Two-sided** — checks **any difference** between A and B (positive or negative).
-2. **One-sided “larger”** — tests if **B is better than A**.
-3. **One-sided “smaller”** — tests if **B is worse than A**.
+2. **One-sided (B > A)** — tests whether **Variant B improves conversion compared to Variant A** (Improvement Test).
+3. **One-sided (B < A)** — tests whether **Variant B performs worse than Variant A** (Degradation / Risk Test).
 
 **Metric:** Conversion rate per experiment (`completed purchase / users exposed`).
 
@@ -403,7 +398,6 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 ### **Results Tables**
 
 **1️. Two-Sided Test (any difference)**
-
 | Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
 | ---------- | ----------- | ----------- | ----------- | ------- | ------- |
 | 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.7445  |
@@ -415,8 +409,7 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 | 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.1206  |
 | 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.1422  |
 
-**2️. One-Sided “Larger” Test (B > A)**
-
+**2️. One-Sided Test — (B > A) (Improvement Test)**
 | Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
 | ---------- | ----------- | ----------- | ----------- | ------- | ------- |
 | 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.3723  |
@@ -428,8 +421,7 @@ We applied a **Two-Proportion Z-Test** for each experiment under three scenarios
 | 7          | 0.1739      | 0.2697      | 0.0958      | -1.5521 | 0.9397  |
 | 8          | 0.1373      | 0.2165      | 0.0792      | -1.4676 | 0.9289  |
 
-**3️. One-Sided “Smaller” Test (B < A)**
-
+**3️. One-Sided Test — (B < A) (Degradation / Risk Test)**
 | Experiment | Conv Rate A | Conv Rate B | Lift B vs A | Z-Score | P-Value |
 | ---------- | ----------- | ----------- | ----------- | ------- | ------- |
 | 1          | 0.2000      | 0.1818      | -0.0182     | 0.3259  | 0.6277  |
@@ -462,20 +454,45 @@ Legend: <br>
 
 </details>
 
-### **Interpretation & Findings**
+### Experiment 3 (Key Winner)
 
-* **Two-Sided Test:** Confirms which experiments show **any significant difference**. Experiment 3 (p=0.0023) shows **significant positive lift**, while others are mostly inconclusive.
-* **One-Sided “Larger”:** Tests if **B outperforms A**. Experiment 3 (p≈0.999) and Experiment 4 (p≈0.962) strongly support that **B is better**. Experiments 1, 5, 6 show no evidence of improvement.
-* **One-Sided “Smaller”:** Tests if **B underperforms A**. Experiments 1, 5, 6 have higher p-values, suggesting **no strong evidence that B is worse**, while Experiment 3 is highly unlikely to be worse.
-
-**Business Takeaways:**
-
-1. **Experiment 3** is a clear winner — Version B delivers a significant conversion lift.
-2. **Experiment 4** shows promising positive lift; could be considered for rollout with caution.
-3. **Experiments 1, 5, 6** show either negative lift or no significant change — should not be prioritized.
-4. **Experiments 2, 7, 8** are inconclusive — might need larger sample sizes or further testing.
-
-
+* Two-sided p = **0.0023** → A statistically significant difference exists between A and B
+* One-sided **B > A p = 0.0011** → **Variant B significantly outperforms Variant A**
+* One-sided **B < A p = 0.9989** → No evidence that Variant B performs worse than A
 
 ---
+
+### **Interpretation & Findings**
+
+* **Two-Sided Test:**
+  Identifies experiments with **any statistically significant difference** between Variant A and B.
+
+  * **Experiment 3** shows a statistically significant difference (p = 0.0023), confirming that Variant B performs differently from A.
+  * All other experiments show no statistically significant difference at the 5% level.
+
+* **One-Sided Test (B > A) — Improvement Test:**
+  Tests whether **Variant B outperforms Variant A**.
+
+  * **Experiment 3** shows strong evidence that **B significantly improves conversion** over A (p = 0.0011).
+  * **Experiment 4** shows borderline evidence of improvement (p = 0.0384).
+  * Experiments **2, 7, and 8** show positive lift but remain statistically inconclusive.
+  * Experiments **1, 5, and 6** show no evidence that B improves performance.
+
+* **One-Sided Test (B < A) — Degradation / Risk Test:**
+  Tests whether **Variant B performs worse than Variant A**.
+
+  * No experiments show statistically significant evidence that B underperforms A.
+  * High p-values across most experiments indicate **low risk of conversion harm** from Variant B.
+
+---
+
+### **Business Takeaways**
+
+1. **Experiment 3** is a clear winner — Variant B delivers a **large and statistically significant conversion lift**.
+2. **Experiment 4** shows promising uplift and may justify a **limited or phased rollout**.
+3. **Experiments 1, 5, and 6** show no measurable benefit and should **not be rolled out**.
+4. **Experiments 2, 7, and 8** exhibit positive lift but require **larger samples or further testing** before confident rollout.
+
+---
+
   
