@@ -92,7 +92,8 @@ The EDA builds a **Complete Intelligence Foundation**, revealing — setting the
 - Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, reinforcing the importance of evaluating full-funnel outcomes.
 
 <details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
-**NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
+
+  **NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
 
  
 ### **Experiment-level Funnel Lift Analysis (A/B Testing):**
