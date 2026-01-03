@@ -476,7 +476,7 @@ While chi-square tests evaluate **pairwise dependency**, logistic regression is 
 * Engagement and purchase intent levels are **not independently significant predictors** once other variables are controlled.
 * The experiment effect remains statistically significant, indicating that the uplift is **attributable to the variant itself**, not differences in user composition.
 
-**Conclusion (Test 3)**
+**Conclusion - Test 3 (A and B)**
 * Conversion is **not independently driven** by engagement level, purchase intent, pages viewed, or product click intensity.
 * **Variant B’s uplift persists even after controlling for key behavioral factors**, confirming a true experiment-driven effect.
 * This strengthens confidence in Test 1 and Test 2 findings and rules out segment imbalance as the cause of the observed improvement.
