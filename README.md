@@ -379,15 +379,6 @@ Mid-funnel users + high-performing elements = largest business impact.
 - This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
 
 ---
-Yup, I went through everything you pasted and the code/results you just confirmed — I double-checked:
-
-1. **We are using the correct `alternative="larger"`** now.
-2. **B conversions first, A conversions second** → this makes `alternative="larger"` correctly test **B > A**.
-3. **Count, nobs order is correct** (`count` = successes, `nobs` = observations).
-4. **All numbers in your last table match** what the calculation should produce.
-5. The two-sided / smaller / larger versions we calculated before are fine to **keep as additional info**, but for the main write-up we **focus only on `B > A`** to keep the logical flow clean.
-
----
 
 ## **Test 2 — Experiment-Level Conversion Impact (A vs B)**
 
@@ -425,13 +416,74 @@ Yup, I went through everything you pasted and the code/results you just confirme
 
 ---
 
-## **Test 3 — **
+## **Test 3 — Segment-Level Dependency & Controlled Impact Analysis**
 
+### **Objective**
+To evaluate whether conversion is dependent on key user behavior segments and to verify whether the observed uplift of Variant B persists after controlling for these segments.
+
+### **Part A — Segment-Level Dependency (Chi-Square Tests)**
+
+**Hypothesis (for each segment)**
+* **H₀ (Null):** Conversion is **independent** of the segment level.
+* **H₁ (Alternative):** Conversion **depends** on the segment level.
+
+**Statistical Test**
+* **Test Used:** Chi-square test of independence
+* **Metric:** Conversion (completed purchase)
+* **Segments Tested:**
+  Engagement Level, Purchase Intent Level, Pages Viewed Level, Product Click Level
+
+**Results**
 | Segment Column        | χ² Statistic | p-value | Interpretation                                                                  |
 | --------------------- | ------------ | ------- | ------------------------------------------------------------------------------- |
-| Purchase_Intent_Level | 0.2941       | 0.8633  | Conversion **not dependent** on purchase intent — differences are likely random |
+| Purchase_Intent_Level | 0.2941       | 0.8633  | Conversion **not dependent** on purchase intent — differences likely random     |
 | Engagement_Level      | 0.2904       | 0.8649  | Conversion **not dependent** on engagement — differences likely random          |
 | PagesView_Level       | 0.0918       | 0.9551  | Conversion **not dependent** on pages viewed — differences likely random        |
-| ClickProd-Level       | 3.1049       | 0.2117  | Conversion **not dependent** on click-product level — differences likely random |
+| ClickProd-Level       | 3.1049       | 0.2117  | Conversion **not dependent** on product click level — differences likely random |
 
+**Interpretation**
+* Across all tested behavioral segments, p-values are well above 0.05.
+* This indicates **no statistically significant dependency** between conversion and any individual segment level.
+* Observed conversion differences across levels are likely due to **random variation**, not structural effects.
+
+
+
+### **Part B — Controlled Impact Analysis (Logistic Regression)**
+
+**Purpose**
+While chi-square tests evaluate **pairwise dependency**, logistic regression is used to assess whether the **experiment effect remains significant after controlling for user behavior**.
+
+**Model Setup**
+* **Dependent Variable:** Conversion (binary)
+* **Independent Variables:**
+
+  * Engagement_Level
+  * Purchase_Intent_Level
+  * Experiment Version (A vs B)
+
+> Note: Post-treatment funnel variables (Pages Viewed, Product Clicks) were intentionally excluded to avoid blocking the causal pathway of the experiment.
+
+**Statistical Test**
+* **Test Used:** Logistic regression (Maximum Likelihood Estimation)
+* **Metric:** Odds of conversion
+
+**Key Result**
+| Variable       | Odds Ratio | 95% CI         | p-value    |
+| -------------- | ---------- | -------------- | ---------- |
+| Variant B vs A | **1.387**  | [1.069, 1.798] | **0.0137** |
+
+**Interpretation**
+* After controlling for engagement and purchase intent, **Variant B increases conversion odds by ~39% compared to Variant A**.
+* Engagement and purchase intent levels are **not independently significant predictors** once other variables are controlled.
+* The experiment effect remains statistically significant, indicating that the uplift is **attributable to the variant itself**, not differences in user composition.
+
+---
+
+### **Conclusion (Test 3)**
+
+* Conversion is **not independently driven** by engagement level, purchase intent, pages viewed, or product click intensity.
+* **Variant B’s uplift persists even after controlling for key behavioral factors**, confirming a true experiment-driven effect.
+* This strengthens confidence in Test 1 and Test 2 findings and rules out segment imbalance as the cause of the observed improvement.
+
+---
 
