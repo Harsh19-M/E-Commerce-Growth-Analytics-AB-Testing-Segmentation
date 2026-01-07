@@ -106,11 +106,8 @@ The EDA builds a **Complete Intelligence Foundation**, revealing — setting the
 - 5 out of 8 experiments show strong positive purchase lift under Version B, indicating consistent conversion improvement.
 - Some experiments show negative CTR or Add-to-Cart lift but positive purchase lift, reinforcing the importance of evaluating full-funnel outcomes.
 
-<details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
+**NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
 
-  **NOTE:** Detailed experiment-level metrics, rates, and lift analysis are shown below.
-
- 
 ### **Experiment-level Funnel Lift Analysis (A/B Testing):**
 - Completed Purchase is the primary decision metric, as it directly reflects revenue impact.
 - Version B shows higher completed purchase rates in the majority of experiments, though performance varies by experiment ID.
@@ -157,8 +154,6 @@ Quick Takeaway:
 Quick Takeaway:
 A minority of experiments regress, reinforcing the importance of experiment-level analysis rather than global averages.
 
-
-<details> <summary><b> Key EDA: Code & Output Summary For Click Through Behaviour Lift Analysis and Add-to-Cart Lift Analysis (Click to Expand)</b></summary>
  ---
  
 ### **Add-to-Cart Lift Analysis**
@@ -240,15 +235,10 @@ Quick Takeaway: Half the experiments hurt CTR when switching to B.
 
 While Version B shows a slightly higher average CTR overall, experiment-level lift analysis reveals that only 3 out of 8 experiments experienced meaningful improvements. Several experiments showed neutral or negative impact, indicating that Version B’s effectiveness is experiment-specific rather than universally superior.ent rather than universally superior.
 
-</details> 
-
-</details> 
 
 **EDA 5 - Funnel Drop-Off Analysis (Where do people quit?)**
 - Funnel performance varies by stage, not uniformly by variant: Experiment variants differ meaningfully in how well they convert users at each funnel stage. Some variants are stronger at turning visits into product interest (Visit → View ≈ 25–42%), while others excel at final conversion (Visit → Purchase ≈ 8–27%), indicating stage-specific optimization opportunities rather than a single universal winner.
 - Mid-funnel friction drives drop-off, and the funnel is non-linear: The largest drop-off consistently occurs between Product View → Add-to-Cart (often 10–30%), highlighting friction in translating interest into purchase intent rather than issues with site entry. Add-to-Cart → Purchase rates exceeding 100% in several experiments confirm that purchases can occur without recorded cart actions, so funnel steps should be interpreted as engagement signals—not strict sequential behavior.
-<details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
-
 - Landing experience effectiveness differs clearly across experiment variants.
 Visit → Product View rates range from roughly 25% to 42%, showing that some variants are significantly better at converting site visits into product interest.
 - The biggest funnel drop-off occurs between product view and add-to-cart.
@@ -262,14 +252,11 @@ Some variants excel at generating early interest (higher Visit → View), while 
 
 This dataset is simulated and aggregated, so funnel steps should be viewed as engagement signals rather than fixed step-by-step actions. Some users complete purchases without a recorded add-to-cart event. This could happen due to direct ‘Buy Now’ flows, users who already knew what they wanted before visiting the site, or limitations in how add-to-cart actions are captured in the data.
 
-</details> 
-
 
 **EDA 6 - Segment-Level Experiment Performance**
 - Experiment Version B outperforms Version A across every Engagement Level and Purchase Intent segment, but the magnitude of uplift depends on the UI element used: TrustBadge consistently drives the highest conversions for High-Engagement users (all intent levels), UrgencyBanner performs best for Medium Engagement + High Intent users, and the largest scalable gains come from mid-funnel users (Medium/Low Engagement + Low Intent) where Version B + TrustBadge delivers strong, stable conversion uplift across hundreds of users — showing that engagement + element choice amplify purchase intent, while high-intent users alone are not the primary growth lever.
 - Users are segmented into 3 funnel stages: Engagement (Interest), Purchase Intent, and Final Conversion. The addition of element_tested lets us see which UI/UX element drives conversions within each segment.
 
-<details> <summary><b> Key EDAs Experiment-level metrics and analysis (Click to Expand)</b></summary>
 
 **Engagement Level Segmentation**
 - High Engagement (~21% of users) are most active and likely to convert; Medium (~51%) are exploring and can be nudged toward conversion, Low (~28%) may need re-engagement campaigns.
@@ -310,7 +297,7 @@ Mid-funnel users + high-performing elements = largest business impact.
 | Medium          | Medium              | B               | TrustBadge       | 0.235294         | 13             |
 
 
-<details> <summary><b> Complete Final Conversion Table (with All elements tested) (Click to Expand)</b></summary>
+**Complete Final Conversion Table (with All elements tested)**
 
 | Engagement_Level | Purchase_Intent_Level | Experiment Version | element_tested      | avg_Converion | Users |
 |-----------------|---------------------|-----------------|------------------|---------------|-------|
@@ -361,9 +348,6 @@ Mid-funnel users + high-performing elements = largest business impact.
 | Medium          | Medium              | B               | FreeShippingBadge| 0.185541      | 7     |
 | Medium          | Medium              | B               | PriceCharm       | 0.152174      | 4     |
 | Medium          | Medium              | B               | TrustBadge       | 0.235294      | 2     |
-
-
-</details> 
 
 </details>
   
