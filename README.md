@@ -380,6 +380,8 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 **NOTE:** Advanced statistical methods (z-tests, chi-square tests, logistic regression, and interaction modeling) were selectively applied based on the analytical question being addressed, rather than used indiscriminately.
 
+<details> <summary><b> Analytical Tests 1 to 5 (Click to Expand)</b></summary>
+
 <details> <summary><b> Analytical Test 1 - Overall Conversion Impact (A vs B) (Click to Expand)</b></summary>
   
 ### **Test 1 — Overall Conversion Impact (A vs B)**
@@ -624,6 +626,8 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 
 ---
 <details> 
+
+<details>
 
 ---
 
