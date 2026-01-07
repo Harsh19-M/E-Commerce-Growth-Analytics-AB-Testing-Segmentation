@@ -69,6 +69,29 @@ Define Metrics, Map Funnel Stages **(Visit → View → ATC → Purchase)**, Seg
 - Started with clean base tables via PostgreSQL CTEs; added new metrics (`Click-through_Behaviour`, `Add_to_cart Rate`, `Conversion_Rate(Cmpltd_Pur-Ratio)`) and user segments (`Engagement_Level`, `PagesView_Level`, `ClickProd-Level`, `Purchase_Intent_Level`) in Python, then aggregated into **Analysis-LvL_table**.
 - Loaded the post-EDA final table (AggEtable_analysisLvL) back into PostgreSQL for Power BI dashboards, downstream analyses, and future modeling.
 
+Approach Overview
+Planning & Funnel Definition
+
+Defined success metrics
+
+Mapped full funnel (Visit → View → ATC → Purchase)
+
+Segmented users by Engagement and Purchase Intent
+
+Aggregated Table Creation (PostgreSQL)
+Validated joins, exposure balance, and session logic
+Applied window functions, filtered counts, and deduplication
+Produced Agg_Etable with 1,563 clean rows
+
+Python EDA & Feature Engineering
+Engineered conversion rates and lift metrics
+Loaded the post-EDA final table (AggEtable_analysisLvL) back into PostgreSQL for Power BI dashboards, downstream analyses, and future modeling.
+Built funnel drop-off tables preserving attrition
+Created explainable behavioral segments
+
+Reloaded final table into PostgreSQL for BI & reporting
+
+
 
 ### **Exploration (EDA) in Python**
 The EDA builds a **Complete Intelligence Foundation**, revealing — setting the stage for deeper testing and the final BI dashboard & reporting.
@@ -357,7 +380,8 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 **NOTE:** Advanced statistical methods (z-tests, chi-square tests, logistic regression, and interaction modeling) were selectively applied based on the analytical question being addressed, rather than used indiscriminately.
 
-
+<details> <summary><b> Analytical Test 1 - Overall Conversion Impact (A vs B) (Click to Expand)</b></summary>
+  
 ### **Test 1 — Overall Conversion Impact (A vs B)**
 
 **Hypothesis**
@@ -382,6 +406,7 @@ Mid-funnel users + high-performing elements = largest business impact.
 - This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
 
 ---
+<details>
 
 ## **Test 2 — Experiment-Level Conversion Impact (A vs B)**
 
@@ -583,3 +608,35 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 
 ---
 
+## Final Insights
+* **Variant B is the statistically superior version** with consistent conversion uplift.
+* Purchase completion—not CTR—should drive experiment decisions.
+* Mid-funnel users represent the largest scalable revenue opportunity.
+* UI elements act as conversion multipliers, but effects are not segment-dependent.
+* Results are robust to controls, confirming a true experiment-driven impact.
+
+---
+
+## Recommendations
+* Roll out Variant B, prioritizing experiments with validated lift
+* Optimize mid-funnel UX (Trust & Urgency signals)
+* Evaluate experiments by purchase completion, not early engagement
+* Continue experimentation with focused, testable hypotheses
+  
+---
+
+## Business Impact
+| Area                    | Impact                            |
+| ----------------------- | --------------------------------- |
+| Conversion Optimization | Statistically validated uplift    |
+| Revenue Growth          | Higher purchase completion        |
+| Experiment Strategy     | Focus on bottom-of-funnel metrics |
+| Customer Targeting      | Prioritize mid-funnel segments    |
+| Decision Confidence     | Results stable across controls    |
+
+
+## Key Outcomes
+* Built a production-style A/B testing framework
+* Delivered statistically defensible rollout decisions
+* Produced reusable analysis tables for BI and future tests
+* Demonstrated end-to-end analytics maturity
