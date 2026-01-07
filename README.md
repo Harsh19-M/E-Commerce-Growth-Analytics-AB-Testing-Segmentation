@@ -406,7 +406,10 @@ Mid-funnel users + high-performing elements = largest business impact.
 - This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
 
 ---
+
 <details>
+
+<details> <summary><b> Analytical Test 2 — Experiment-Level Conversion Impact (A vs B) (Click to Expand)</b></summary>
 
 ## **Test 2 — Experiment-Level Conversion Impact (A vs B)**
 
@@ -443,6 +446,11 @@ Mid-funnel users + high-performing elements = largest business impact.
 * Recruiter-friendly: clear, concise, statistically correct, and highlights where rollout is justified vs where it’s inconclusive.
 
 ---
+
+<details>
+
+
+<details> <summary><b> Analytical Test 3 — Segment-Level Dependency & Controlled Impact Analysis (Click to Expand)</b></summary>
 
 ## **Test 3 — Segment-Level Dependency & Controlled Impact Analysis**
 
@@ -511,6 +519,11 @@ While chi-square tests evaluate **pairwise dependency**, logistic regression is 
 
 ---
 
+<details> 
+
+
+<details> <summary><b> Analytical Test 4 — Variant B Impact Across Funnel Segments (Interaction with Intent Level) (Click to Expand)</b></summary>
+
 ## **Test 4 — Variant B Impact Across Funnel Segments (Interaction with Intent Level)**
 
 ### **Objective**
@@ -555,10 +568,13 @@ To evaluate whether the lift from **Variant B** differs between **high-intent** 
 * Mid-funnel users respond just as well as high-intent users, highlighting the **scalable nature of the experiment effect**.
 * This further strengthens confidence in the conclusions from Tests 1–3 and supports potential **full rollout** of Variant B.
 
-
 **Note:** Logistic regression with interaction modeling was used here because the question involves **differential impact across segments**, making it the appropriate high-level statistical test.
 
 ---
+<details>
+
+
+<details> <summary><b> Analytical Test 5 — UI Element Effectiveness by Segment (Click to Expand)</b></summary>
 
 ## **Test 5 — UI Element Effectiveness by Segment**
 
@@ -607,6 +623,9 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 **Note:** Even though results were **not significant**, including this test **demonstrates familiarity with ANOVA and interaction modeling** — recruiters will see that you know how to structure, run, and interpret high-level analytical tests.
 
 ---
+<details> 
+
+---
 
 ## Final Insights
 * **Variant B is the statistically superior version** with consistent conversion uplift.
@@ -634,9 +653,12 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 | Customer Targeting      | Prioritize mid-funnel segments    |
 | Decision Confidence     | Results stable across controls    |
 
+---
 
 ## Key Outcomes
 * Built a production-style A/B testing framework
 * Delivered statistically defensible rollout decisions
 * Produced reusable analysis tables for BI and future tests
 * Demonstrated end-to-end analytics maturity
+
+---
