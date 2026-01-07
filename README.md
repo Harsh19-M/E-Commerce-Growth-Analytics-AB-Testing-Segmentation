@@ -380,9 +380,13 @@ Mid-funnel users + high-performing elements = largest business impact.
 
 **NOTE:** Advanced statistical methods (z-tests, chi-square tests, logistic regression, and interaction modeling) were selectively applied based on the analytical question being addressed, rather than used indiscriminately.
 
-<details> <summary><b> Analytical Tests 1 to 5 (Click to Expand)</b></summary>
+<details>
+<summary><b>Analytical Tests 1 to 5 (Click to Expand)</b></summary>
 
-<details> <summary><b> Analytical Test 1 - Overall Conversion Impact (A vs B) (Click to Expand)</b></summary>
+---
+
+<details>
+<summary><b>Analytical Test 1 — Overall Conversion Impact (A vs B)</b></summary>
   
 ### **Test 1 — Overall Conversion Impact (A vs B)**
 
@@ -406,10 +410,12 @@ Mid-funnel users + high-performing elements = largest business impact.
 **Conclusion**
 - **Variant B delivers a statistically significant improvement in conversion rate over Variant A.**
 - This confirms that the website changes introduced in Variant B have a real, measurable positive impact on user purchasing behavior.
+</details>
 
 ---
 
-<details> <summary><b> Analytical Test 2 — Experiment-Level Conversion Impact (A vs B) (Click to Expand)</b></summary>
+<details>
+<summary><b>Analytical Test 2 — Experiment-Level Conversion Impact</b></summary>
 
 ## **Test 2 — Experiment-Level Conversion Impact (A vs B)**
 
@@ -445,9 +451,12 @@ Mid-funnel users + high-performing elements = largest business impact.
 * This aligns logically with **Test 1**, where Variant B outperformed A overall.
 * Recruiter-friendly: clear, concise, statistically correct, and highlights where rollout is justified vs where it’s inconclusive.
 
+</details>
+
 ---
 
-<details> <summary><b> Analytical Test 3 — Segment-Level Dependency & Controlled Impact Analysis (Click to Expand)</b></summary>
+<details>
+<summary><b>Analytical Test 3 — Segment Dependency & Controlled Impact Analysis</b></summary>
 
 ## **Test 3 — Segment-Level Dependency & Controlled Impact Analysis**
 
@@ -514,9 +523,12 @@ While chi-square tests evaluate **pairwise dependency**, logistic regression is 
 * **Variant B’s uplift persists even after controlling for key behavioral factors**, confirming a true experiment-driven effect.
 * This strengthens confidence in Test 1 and Test 2 findings and rules out segment imbalance as the cause of the observed improvement.
 
+</details>
+
 ---
 
-<details> <summary><b> Analytical Test 4 — Variant B Impact Across Funnel Segments (Interaction with Intent Level) (Click to Expand)</b></summary>
+<details>
+<summary><b>Analytical Test 4 — Funnel Segment Interaction Analysis</b></summary>
 
 ## **Test 4 — Variant B Impact Across Funnel Segments (Interaction with Intent Level)**
 
@@ -564,9 +576,12 @@ To evaluate whether the lift from **Variant B** differs between **high-intent** 
 
 **Note:** Logistic regression with interaction modeling was used here because the question involves **differential impact across segments**, making it the appropriate high-level statistical test.
 
+</details>
+
 ---
 
-<details> <summary><b> Analytical Test 5 — UI Element Effectiveness by Segment (Click to Expand)</b></summary>
+<details>
+<summary><b>Analytical Test 5 — UI Element Effectiveness by Segment</b></summary>
 
 ## **Test 5 — UI Element Effectiveness by Segment**
 
@@ -614,12 +629,11 @@ To evaluate which **UI elements** drive the highest conversion for each **user s
 
 **Note:** Even though results were **not significant**, including this test **demonstrates familiarity with ANOVA and interaction modeling** — recruiters will see that you know how to structure, run, and interpret high-level analytical tests.
 
----
-<details>
-<details>
----
+</details>
 
 ---
+
+</details>
 
 ## Final Insights
 * **Variant B is the statistically superior version** with consistent conversion uplift.
