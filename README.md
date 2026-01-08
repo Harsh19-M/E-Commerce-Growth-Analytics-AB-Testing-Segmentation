@@ -470,7 +470,7 @@ To evaluate whether conversion is dependent on key user behavior segments and to
 **Interpretation**
 * Across all tested behavioral segments, p-values are well above 0.05.
 * This indicates **no statistically significant dependency** between conversion and any individual segment level.
-* Observed conversion differences across levels are likely due to **random variation**, not structural effects.
+* Observed conversion differences across levels are likely due to **random variation**, not structural effects. 
 
 
 ### **Part B — Controlled Impact Analysis (Logistic Regression)**
